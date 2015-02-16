@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Domhnall O'Hanlon" />
+  <meta name="date" content="2015-02-17" />
+  <title>Arithmetic &amp; Logic</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Arithmetic &amp; Logic</h1>
+<h2 class="author">Domhnall O'Hanlon</h2>
+<h3 class="date">February 17, 2015</h3>
+</div>
+<h3 id="part-2-arithmetic-and-logic">Part 2: Arithmetic and Logic</h3>
+<h3 id="maths-operators">Maths Operators</h3>
+<p>Also known as binary operators, these mathematical operators require two operands to produce an output. For example, 40 + 2 = 42 requires two inputs to produce an output. As we will see later, programming languages also support unary opeartors.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Operation</th>
+<th align="left">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">addition</td>
+<td align="left">+</td>
+</tr>
+<tr class="even">
+<td align="left">subtraction</td>
+<td align="left">-</td>
+</tr>
+<tr class="odd">
+<td align="left">multiplication</td>
+<td align="left">*</td>
+</tr>
+<tr class="even">
+<td align="left">division</td>
+<td align="left"> </td>
+</tr>
+<tr class="odd">
+<td align="left">modulo</td>
+<td align="left">%</td>
+</tr>
+<tr class="even">
+<td align="left">equivalence</td>
+<td align="left">==</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-simple-incrementer">A simple incrementer</h3>
+<p>One of the most common tasks you will encounter in programming (in any language) is incrementing a value i.e. increasing it by a specific amount. Take for example scoring points in a game. Every time you hit a pig in Angry Birds 5000 points are added to your score.</p>
+<p>Try the following code snippet:</p>
+<pre class="sourceCode c"><code class="sourceCode c">  <span class="co">//initialise a variable to store the number of times prinf is run</span>
+  <span class="dt">int</span> numPrints = <span class="dv">0</span>;
+
+  <span class="co">//increment the variable by one</span>
+  numPrints = numPrints + <span class="dv">1</span>;
+    printf(<span class="st">&quot;The printf function has run %d times </span><span class="ch">\n</span><span class="st">&quot;</span>, numPrints);
+
+  numPrints = numPrints + <span class="dv">1</span>;
+    printf(<span class="st">&quot;The printf function has run %d times </span><span class="ch">\n</span><span class="st">&quot;</span>, numPrints);
+
+  numPrints = numPrints + <span class="dv">1</span>;
+    printf(<span class="st">&quot;The printf function has run %d times </span><span class="ch">\n</span><span class="st">&quot;</span>, numPrints);</code></pre>
+<h3 id="i">i++</h3>
+<p>The most common amount to increment a variable by is one, in fact it's so common that there's a shorthand for it. All you have to do is write it in the form <code>myVariable++</code>, so the example above becomes:</p>
+<pre class="sourceCode c"><code class="sourceCode c">  <span class="dt">int</span> numPrints = <span class="dv">0</span>;
+
+  numPrints++;
+    printf(<span class="st">&quot;The printf function has run %d times </span><span class="ch">\n</span><span class="st">&quot;</span>, numPrints);
+
+  numPrints++;
+    printf(<span class="st">&quot;The printf function has run %d times </span><span class="ch">\n</span><span class="st">&quot;</span>, numPrints);
+
+  numPrints++;
+    printf(<span class="st">&quot;The printf function has run %d times </span><span class="ch">\n</span><span class="st">&quot;</span>, numPrints);</code></pre>
+<h3 id="unary-operators">Unary Operators</h3>
+<p>Unlike binary operators, unary operators only require one operands. They allow you to write your code more concisely. For example, <code>i++</code> or <code>i--</code> will incrememt or decrement the integer <code>i</code>.</p>
+<p>There are serveral other ways of concisely expressing arithmetic operations, but they are binary rather than unary. For example, if we want to implement the Angry Birds scoring system we could use <code>myScore+=5000</code> to increase the score in steps of 5000.</p>
+<p></p>
+<h3 id="table-of-unary-operators">Table of Unary Operators</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Operation</th>
+<th align="left">Symbol</th>
+<th align="left">Also</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Increment</td>
+<td align="left">x++</td>
+<td align="left">++x</td>
+</tr>
+<tr class="even">
+<td align="left">Decrement</td>
+<td align="left">x--</td>
+<td align="left">--x</td>
+</tr>
+<tr class="odd">
+<td align="left">Address</td>
+<td align="left">&amp;x</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Pointer</td>
+<td align="left"><code>*x</code></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Positive</td>
+<td align="left"><code>+x</code></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Negative</td>
+<td align="left">-x</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Ones Complement</td>
+<td align="left">~x</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Logical negation</td>
+<td align="left">!x</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Variable Size</td>
+<td align="left">sizeof x</td>
+<td align="left">sizeof(type-name)</td>
+</tr>
+<tr class="even">
+<td align="left">Type casting</td>
+<td align="left">(type-name)</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="performing-calculations-in-printf">Performing Calculations in printf()</h3>
+<p>You can create functions to perform maths operations almost anywhere in your program. It is also worth knowing that you can perform calculations within other functions such as <code>printf()</code>. Try the following example:</p>
+<pre class="sourceCode c"><code class="sourceCode c">    printf(<span class="st">&quot;Pi is approximately %f&quot;</span>, <span class="dv">22</span>/<span class="dv">7</span>);</code></pre>
+<h3 id="working-with-modulo">Working with Modulo</h3>
+<p>You should be familiar with the first four mathematical operations, but modulo may be new to you. Put simply, modulo tells you the remainder of dividing one number by another. For example <code>7%2</code> would return <code>1</code>, since 2 goes into 7 three time with a remainder of 1. Similarly <code>6%3</code> would return <code>0</code> since 3 divides evenly into six. In general terms, the modulo operator will always return a number between 0 and d-1, where d is the divisor (or denominator, if you prefer to think in fractions).</p>
+<h3 id="order-of-operations">Order of Operations</h3>
+<p>Multiplication is just a concise way of saying that you want to repeatedly add a number to itself, and similarly division is just a simpler way of saying you want to repeatedly subtract a number. Then when multiplication and division become too cumbersome to work with you can use exponents and radicals (roots) to indicate repeated multiplication and division, respectively. This heirarchy is the reason you had to memorise some acronym for the order of mathematical operations.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>PEMDAS</strong></th>
+<th align="left"><strong>BOMDAS</strong></th>
+<th align="left"><strong>BIMDAS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Parentheses</td>
+<td align="left">Brackets</td>
+<td align="left">Brackets</td>
+</tr>
+<tr class="even">
+<td align="left">Exponents</td>
+<td align="left">Orders</td>
+<td align="left">Indices</td>
+</tr>
+<tr class="odd">
+<td align="left">Multiplication</td>
+<td align="left">Multiplication</td>
+<td align="left">Multiplication</td>
+</tr>
+<tr class="even">
+<td align="left">Division</td>
+<td align="left">Division</td>
+<td align="left">Division</td>
+</tr>
+<tr class="odd">
+<td align="left">Addition</td>
+<td align="left">Addition</td>
+<td align="left">Addition</td>
+</tr>
+<tr class="even">
+<td align="left">Subtraction</td>
+<td align="left">Subtraction</td>
+<td align="left">Subtraction</td>
+</tr>
+</tbody>
+</table>
+<h3 id="order-of-operations-1">Order of Operations</h3>
+<p>Unlike many calculators, C is intelligent enough to understand this order and will apply it when making calculations. This means that if you want some particular step of your calculation to happen in a certain order then you will have to make careful use of brackets.</p>
+<p>Try the following snippet as an example and see if you can come up with some others.</p>
+<pre class="sourceCode c"><code class="sourceCode c">    printf(<span class="dv">3</span> + <span class="dv">5</span> * <span class="dv">7</span>); <span class="co">//returns 38</span>
+    printf((<span class="dv">3+5</span>) * <span class="dv">7</span>); <span class="co">//returns 56</span></code></pre>
+<h3 id="programming-challenges">Programming Challenges</h3>
+<p>Here are a few simple scenarios to challenge your understanding of the programming concepts we've covered so far.</p>
+<h4 id="grade-point-average">Grade Point Average</h4>
+<p>Write a simple command line application that accepts 6 integer grades and returns the average of these numbers.</p>
+<h4 id="tip-calculator">Tip Calculator</h4>
+<p>Write a command line application that accepts a bill amount and return to the user both the value of a 10% tip and the combined amount of initial bill and tip.</p>
+<p>### Logic</p>
+<p>This section will help you add some &quot;intelligence&quot; or decision making abilities your programs. By the end of this section you will be able to write programs that respond to a variety of different input conditions, and we will conclude this chapter by writing a very simple game.</p>
+<h3 id="if-statements">If Statements</h3>
+<p>Sometimes refered to as branches, if statements contain code that only executes if a certain condition is met. A nice example of an app that makes decisions based on specific events happening is called &quot;IFTTT&quot; which stands for <strong>If This Then That</strong>. As a more everyday example you can imagine the following scenario: &quot;If it's raining outside then bring an umbrella&quot;</p>
+<h3 id="syntax">Syntax</h3>
+<p>A typical if statment will look like so:</p>
+<pre><code>  if(test if true){
+    code to run if test is true;
+}</code></pre>
+<p>Try the following out:</p>
+<pre class="sourceCode c"><code class="sourceCode c">
+<span class="dt">int</span> input;
+
+  printf(<span class="st">&quot;What is the meaning of life, the universe and everything? </span><span class="ch">\n</span><span class="st">&quot;</span>)?
+  scanf(<span class="st">&quot;%d&quot;</span>, &amp;input);
+
+  <span class="kw">if</span> (input == <span class="dv">42</span>){
+    prinf(<span class="st">&quot;Such learning. Many wisdom. Wow&quot;</span>);
+}</code></pre>
+<h3 id="what-else-can-we-do">What ELSE can we do?</h3>
+<p>In the previous example there was only one &quot;correct&quot; answer. When you run the program you only ever get a response if the number '42' is entered. For every other input the program remains silent.</p>
+<p>By adding an else condition we can catch all the other alternatives that our if test misses.</p>
+<p>The <code>else</code></p>
+<pre class="sourceCode c"><code class="sourceCode c"> <span class="kw">if</span>(input == <span class="dv">42</span>){
+    printf(<span class="st">&quot;Such Learning Many Wisdom. Wow&quot;</span>);
+} <span class="kw">else</span>{
+    printf(<span class="st">&quot;Try again&quot;</span>);
+}</code></pre>
+<h3 id="else-if">Else If</h3>
+<p>Finally, we can run more than two tests by adding in one (or more) <code>else if</code> clauses. For example:</p>
+<pre class="sourceCode c"><code class="sourceCode c"> <span class="kw">if</span>(input == <span class="dv">42</span>){
+    printf(<span class="st">&quot;Such Learning Many Wisdom. Wow&quot;</span>);
+} <span class="kw">else</span> <span class="kw">if</span>(input == <span class="dv">43</span>){
+    printf(<span class="st">&quot;Close, but no cigar&quot;</span>);
+} <span class="kw">else</span> <span class="kw">if</span>(input == <span class="dv">41</span>){
+    printf(<span class="st">&quot;Close, but no cigar&quot;</span>);
+} <span class="kw">else</span>{
+    printf(<span class="st">&quot;Try again&quot;</span>);
+}</code></pre>
+<h3 id="ternary-operator">Ternary Operator</h3>
+<p>As with most things in programming, there's a more concise way to write your if statements. We've already seen the a unary operator take one operand, a binary operator takes two and with a ternary operator we can use three operands to handle the &quot;If-Then-Else&quot; elements of an if statement.</p>
+<pre><code>  (test) ? trueCode : falseCode;</code></pre>
+<p>The ternary operator, just like unary and binary operators, can be used as an argument in other functions such as <code>printf()</code>. Try this nice way to print plurals correctly!</p>
+<pre class="sourceCode c"><code class="sourceCode c">  <span class="dt">int</span> numFriends = <span class="dv">2</span>;
+
+  printf(<span class="st">&quot;You have %d friend%s&quot;</span>, numFriends, (numFriends!=<span class="dv">1</span>) ? <span class="st">&quot;s.&quot;</span> : <span class="st">&quot;.&quot;</span> );</code></pre>
+<h3 id="coding-challenge">Coding Challenge!</h3>
+<h4 id="sorting...sort-of.">Sorting...Sort of.</h4>
+<p>Early entrance is changing - students will now be divided by surname, write a program that checks the first character of a lastName string, A-N, M-Z</p>
+<h3 id="truth-tables">Truth Tables</h3>
+<p>Hopefully you will remember truth tables from your electronics studies in EM113. Just in case you've forgotten, here's what the <code>OR</code> and <code>AND</code> truth tables look like for two inputs.</p>
+<p>A OR B</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">A</th>
+<th align="left">B</th>
+<th align="left">A+B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<p>A AND B</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">A</th>
+<th align="left">B</th>
+<th align="left">A.B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logic-operators">Logic Operators</h3>
+<p>In your logic tests you can test if more than one condition is met using a logic <code>AND</code> operator or you can test to see if either condition is true using the logic <code>OR</code> operator.</p>
+<p>Here's some pseudo-code to illustrate:</p>
+<pre><code>  //logic and example
+  if (test 1 &amp;&amp; test 2){
+    code if both are true;
+}</code></pre>
+<p>Logic and is denoted by <code>&amp;&amp;</code> which is <kbd>Shift</kbd> + <kbd>7</kbd> on a UK keyboard. Logic or is denoted by <code>||</code> which is <kbd>Shift</kbd> + <kbd>\</kbd> on a standard keyboard.</p>
+<h3 id="coding-challenges">Coding Challenges</h3>
+<p>Try these two challenges to test your knowledge of what we covered in this chapter:</p>
+<h4 id="cao-points-calculator">CAO Points Calculator</h4>
+<p>Write an application that asks for an integer input (between 0 and 100) and converts it the corresponding Leaving Cert grade.</p>
+<h4 id="fizz-buzz">Fizz Buzz</h4>
+<p>//need to introduce for loops!</p>
+</body>
+</html>

@@ -166,17 +166,51 @@ int input;
   if (input == 42){
     prinf("Such learning. Many wisdom. Wow");
 }
+```
 
 ### What ELSE can we do?
 
 In the previous example there was only one "correct" answer. When you run the program you only ever get a response if the number '42' is entered. For every other input the program remains silent. 
-### Short Hand (Ternary Operator)
 
+By adding an else condition we can catch all the other alternatives that our if test misses.
 
+The `else`
 
+```C
+ if(input == 42){
+    printf("Such Learning Many Wisdom. Wow");
+} else{
+    printf("Try again");
+}
+
+```
+
+### Else If
+
+Finally, we can run more than two tests by adding in one (or more) `else if` clauses. For example:
+
+```C
+ if(input == 42){
+    printf("Such Learning Many Wisdom. Wow");
+} else if(input == 43){
+    printf("Close, but no cigar");
+} else if(input == 41){
+    printf("Close, but no cigar");
+} else{
+    printf("Try again");
+}
+
+```
+
+### Ternary Operator
+
+As with most things in programming, there's a more concise way to write your if statements. We've already seen the a unary operator take one operand, a binary operator takes two and with a ternary operator we can use three operands to handle the "If-Then-Else" elements of an if statement.
+
+```
   (test) ? trueCode : falseCode;
+```
 
-nice way to print plurals correctly!
+The ternary operator, just like unary and binary operators, can be used as an argument in other functions such as `printf()`. Try this nice way to print plurals correctly!
 
 ```C
   int numFriends = 2;
@@ -184,11 +218,15 @@ nice way to print plurals correctly!
   printf("You have %d friend%s", numFriends, (numFriends!=1) ? "s." : "." );
 
 ```
-#### Coding Challenge!
+### Coding Challenge!
+
+#### Sorting...Sort of.
 
 Early entrance is changing - students will now be divided by surname, write a program that checks the first character of a lastName string, A-N, M-Z 
 
 ### Truth Tables
+
+Hopefully you will remember truth tables from your electronics studies in EM113. Just in case you've forgotten, here's what the `OR` and `AND` truth tables look like for two inputs. 
 
 A OR B
 
@@ -210,10 +248,29 @@ A AND B
 | 0 | 1 | 0   |
 | 1 | 1 | 1   |
 
+### Logic Operators
 
-#### Points Calculator
+In your logic tests you can test if more than one condition is met using a logic `AND` operator or you can test to see if either condition is true using the logic `OR` operator.
+
+Here's some pseudo-code to illustrate:
+
+```
+  //logic and example
+  if (test 1 && test 2){
+    code if both are true;
+}
+```
+
+Logic and is denoted by `&&` which is <kbd>Shift</kbd> + <kbd>7</kbd> on a UK keyboard. Logic or is denoted by `||` which is <kbd>Shift</kbd> + <kbd>&bsol;</kbd> on a standard keyboard.
+
+### Coding Challenges
+
+Try these two challenges to test your knowledge of what we covered in this chapter:
+
+#### CAO Points Calculator
+
+Write an application that asks for an integer input (between 0 and 100) and converts it the corresponding Leaving Cert grade. 
 
 #### Fizz Buzz
 
-need to introduce if statments!
-
+//need to introduce for loops!

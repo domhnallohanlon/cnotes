@@ -1,5 +1,6 @@
 Lecture 1:
 
+convert [] to {} on array slides.
 
 Lecture 2:
 

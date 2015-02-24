@@ -10,7 +10,7 @@
 Also known as binary operators, these mathematical operators require two operands to produce an output. For example, 40 + 2 = 42 requires two inputs to produce an output. As we will see later, programming languages also support unary opeartors.
 
 | Operation      | Symbol |
-|----------------|--------|
+|:--------------:|:------:|
 | addition       |   +    |
 | subtraction    |   -    |
 | multiplication |   *    |
@@ -273,4 +273,10 @@ Write an application that asks for an integer input (between 0 and 100) and conv
 
 #### Fizz Buzz
 
-//need to introduce for loops!
+_need to introduce for loops first_
+
+Print all the numbers from 0 to 30 inclusive.
+If the number is evenly divisibe by 3 print "FIZZ" instead of the number
+If it's evenly divisible by 5 then print "BUZZ" instead of that number.
+If the number is divisible by both 3 && 5 the print FIZZBUZZ
+

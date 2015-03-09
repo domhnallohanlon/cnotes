@@ -1,7 +1,28 @@
+% Libraries
+% Domhnall O'Hanlon
+% 10th March 2015
 
 ## Part 4: Libraries (.h files)
 
 ### stdio.h
+
+We've been using the C __st__andar__d__ __i__nput __o__utput library for a while now, so let's take a closer look at what it contains and some of the other functions it gives us access too.  
+
+### Working with `char`
+
+There are two functions that allow you to read and write single characters in the console. 
+
+```C
+
+getchar()
+
+putchar()
+
+
+```
+
+### ASCII Table
+
 
 puts()
 gets()

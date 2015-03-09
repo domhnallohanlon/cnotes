@@ -21,7 +21,8 @@ Next you will have some code to run - for example increment at counter, print so
 
 Finally you need an end condition. Once this condition is met or exceeded then the loop should exit gracefully.
 
-## While Loops
+\newpage
+### While Loops
 
 A `while` loop, as the name implies, executes while a certains condition is true. Once the test condition is no longer true then the loop is broken and code execution moves on to the next line. Try this snippet to get started:
 
@@ -41,7 +42,7 @@ A `while` loop, as the name implies, executes while a certains condition is true
  }
 
 ```
-
+\newpage
 ### Syntax
 A typical `while` loop will begin with a test condition:
 ```
@@ -244,7 +245,8 @@ int main(){
 ### Fizz Buzz Revisited
 
 Using a loop of your choosing:
--Print all the numbers from 0 to 30 inclusive.
--If the number is evenly divisibe by 3 print "FIZZ" instead of the number
--If it's evenly divisible by 5 then print "BUZZ" instead of that number.
--If the number is divisible by both 3 && 5 the print FIZZBUZZ
+
+  * Print all the numbers from 0 to 30 inclusive.
+  * If the number is evenly divisibe by 3 print "FIZZ" instead of the number
+  * If it's evenly divisible by 5 then print "BUZZ" instead of that number.
+  * If the number is divisible by both 3 && 5 the print FIZZBUZZ

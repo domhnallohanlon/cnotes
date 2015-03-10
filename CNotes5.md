@@ -1,3 +1,7 @@
+% Searching and Sorting
+% Domhnall O'Hanlon
+% 24th March 2015
+
 ## Sorting
 
 ### Bubble Sort

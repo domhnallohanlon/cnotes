@@ -1,13 +1,12 @@
-% Loops
+<!-- % Loops
 % Domhnall O'Hanlon
-% February 24, 2015
+% February 24, 2015 -->
 
-### Part 3: Loops
+# Part 3: Loops
 
-### Overview
 We've already seen a few instances where we wanted to repeatedly print information to the screen. Performing repetitive tasks is one of the things that computers are exceptionally good at doing. In this chapter we'll introduce a variety of different loops that you can use to write better programs.
 
-### Looping
+## Looping
 If you've never done any programming before loops can be a challenging topic due to their unfamiliarity. If you think about it in more general terms, how would you give a computer instruction to do something over and over again?
 How would you avoid getting stuck in an _infinite loop_?
 
@@ -21,12 +20,13 @@ Next you will have some code to run - for example increment at counter, print so
 
 Finally you need an end condition. Once this condition is met or exceeded then the loop should exit gracefully.
 
-\newpage
-### While Loops
+<!-- \newpage -->
+
+## While Loops
 
 A `while` loop, as the name implies, executes while a certains condition is true. Once the test condition is no longer true then the loop is broken and code execution moves on to the next line. Try this snippet to get started:
 
-```C
+```
  int main(){
      
      int counter = 0;
@@ -42,7 +42,8 @@ A `while` loop, as the name implies, executes while a certains condition is true
  }
 
 ```
-\newpage
+<!-- \newpage -->
+
 ### Syntax
 A typical `while` loop will begin with a test condition:
 ```
@@ -69,7 +70,7 @@ Here's a simple example you can code using `while` loops. Which would you prefer
 
 Your loop should run 30 times, doubling the value of your variable each time. 
 
-### Do While
+## Do While
 
 With a `while` loop there is always a possibility that the test condition will never be true and that the code within the loop will never run. 
 
@@ -77,7 +78,7 @@ A `do while` loop differs from a `while` loop in that it will always run at leas
 
 ### Do While Syntax
 
-```C
+```
     int loopCounter = 1;
 
    /* do loop execution */
@@ -93,13 +94,13 @@ A `do while` loop differs from a `while` loop in that it will always run at leas
 ![Do While loop](images/doWhile.jpg "Structure of a Do While Loop")
 
 
-### For Loops
+## For Loops
 
 The `for` loop contains the starting condition, end condition and incrementer all at the beginning of the loop
 
 ###Syntax
 
-```C
+```
  int main(){
      
      int counter;
@@ -120,7 +121,7 @@ The `for` loop contains the starting condition, end condition and incrementer al
 
 ###Example
 
-```C
+```
 
 /* Print all the even numbers between 0 and 100 in 3 lines of code */
  int main(){
@@ -144,12 +145,12 @@ A quick challenge to really test your understanding so far.
 
 Create a program that has variables to represent the number of rows and number of colums that a table should have. Then use nested for loop to print a 3 x 3 table to the console.
 
-### Break
+## Break
 
 Lets say that we have some condidtion which, if met, should break us out of our loop immediatley. In such a scenario we would use a `break;` statement.
 Here's a simple example that modifies out doWhile application to exit before it has iterated through the loop 10 times.
 
-```C
+```
  int main(){
      
     int loopCounter = 1;
@@ -171,12 +172,12 @@ Here's a simple example that modifies out doWhile application to exit before it 
 ```
 
 
-### Continue
+## Continue
 Conceptually this is the opposite of a `break` statement. It's behaviour will differ slightly depending on where it is used. In a `for` loop the `continue` statement will cause the conditional test and increment portions of the loop to execute.
 
 When used in a `while` or  `do-while` loop, the `continue` statement causes the program control to pass straight to the conditional tests.
 
-### Switch
+## Switch
 
 Switch statements are used to test a variable for equivalence against a list of given values. It is conceptually similar to an `if-else if-else` block of code.
 
@@ -186,7 +187,7 @@ Switch statements are used to test a variable for equivalence against a list of 
 
 ### Example 1
 
-```C
+```
 int main(){
      int input;
      int type;
@@ -220,7 +221,7 @@ int main(){
 ### Example 2
  
 
-```C
+```
    switch(grade)
    {
    case 'A' :
@@ -250,3 +251,7 @@ Using a loop of your choosing:
   * If the number is evenly divisibe by 3 print "FIZZ" instead of the number
   * If it's evenly divisible by 5 then print "BUZZ" instead of that number.
   * If the number is divisible by both 3 && 5 the print FIZZBUZZ
+
+## Download
+
+<a href="03_loops.pdf" target="_blank" class="btn btn-primary">Download Notes as PDF</a>

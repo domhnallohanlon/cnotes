@@ -12,4 +12,4 @@ This module is delivered in 9 parts and focuses on introducing learners to the f
 
 ## 3: Loops
 
-<a href="#!C3_loops.md" class="btn btn-primary">View this Lecture</a>
+<a href="#!C3_loops.md" class="btn btn-primary">View this Lecture</a> <a href="03_loops.pdf" class="btn btn-primary" target="_blank">Download this Lecture</a>

@@ -26,7 +26,7 @@ In this secion you will write your first C programs, and learn about the differn
 
 ```
 
-\newpage
+<!-- \newpage -->
 
 
 ## Comments
@@ -48,7 +48,7 @@ Multi line comments span two or more lines.
     */
 ```
 
-\newpage
+<!-- \newpage -->
 
 ## Escape Characters
 
@@ -82,7 +82,7 @@ It is also possible to output a specific number of digits from a float like so:
   }
 ```
 
-\newpage 
+<!-- \newpage --> 
 
 ## Variables
 
@@ -111,7 +111,7 @@ To make your life easier you can **declare** and **initialise** a variable in on
   float pi = 3.141593;
 ```
 
-\newpage
+<!-- \newpage -->
 
 ## Arithmetic
 
@@ -156,7 +156,7 @@ Great...let's try some more. You code will execute from top to bottom, so new va
   }
 ```
 
-\newpage
+<!-- \newpage -->
 
 ## Types of Variables:
 
@@ -184,7 +184,7 @@ Double          | double        | 64 bit  | 15 decimal places
 Long            | long          | 80 bit  | 19 decimal places
 
 
-\newpage
+<!-- \newpage -->
 
 ## Working with Strings
 
@@ -201,7 +201,7 @@ When you go to run your code the C compiler needs to know where every string end
 To overwrite an existing string use the `strcpy()` function. This function takes two **arguments** or parameters. Remember, the `strcpy()` function can be used to overwrite *any* string, so the first thing you need to tell is is what string to replace, then you need to tell it what to replace it with.
 
 
-\newpage
+<!-- \newpage -->
 
 ## Arrays
 
@@ -215,7 +215,7 @@ What is we want to know,for example, what the third element of an array is? Well
   printf("%d", luckyNums[i]);
 ```
 
-\newpage
+<!-- \newpage -->
 
 ## Preprocessor Directives
 
@@ -234,7 +234,7 @@ Lets create a header with some commonly used mathematical constants
 If you're using an IDE you'll see that this new .h file is saved in a new folder called "headers". Typically your compiler will expect your headers to be in a predefined location ------ and this is implied in the code by using brackets `#include <someHeader.h>` however, our hearder is stored in the same directory as our source code so acccess it we use quotation marks instead:
 `#include "myHeader.h"`
 
-\newpage
+<!-- \newpage -->
 
 ## Input!!
 
@@ -265,7 +265,7 @@ If you build and run the previous example you will just see a console with a bli
 
 ```
 
-\newpage
+<!-- \newpage -->
 
 ### Challenge
 

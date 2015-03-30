@@ -65,7 +65,7 @@ Unlike binary operators, unary operators only require one operands. They allow y
 
 There are serveral other ways of concisely expressing arithmetic operations, but they are binary rather than unary. For example, if we want to implement the Angry Birds scoring system we could use `myScore+=5000` to increase the score in steps of 5000. 
 
-\newpage
+<!-- \newpage -->
 
 ### Table of Unary Operators
 
@@ -134,7 +134,7 @@ Write a command line application that accepts a bill amount and return to the us
 
 
 
-\newpage
+<!-- \newpage -->
 
 ## Logic
 

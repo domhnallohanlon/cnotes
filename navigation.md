@@ -32,9 +32,12 @@
 
 [3: Loops]()
 
-  * [Transistors](transistors.md)
-  * [Motors](motors.md)
-  * [H-Bridge](hbridge.md)
+  * [While Loops](C3_loops.md#While_Loops)
+  * [Do While Loops](C3_loops.md#Do_While)
+  * [For Loops](C3_loops.md#For_Loops)
+  * [Break](C3_loops.md#Break)
+  * [Continue](C3_loops.md#Continue)
+  * [Swithc](C3_loops.md#Switch)
 
 [Quick Start Guides]()
 

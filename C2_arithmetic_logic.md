@@ -1,3 +1,7 @@
+<!-- % Arithmetic \& Logic
+% Domhnall O'Hanlon
+% 2015 -->
+
 # Part 2: Arithmetic and Logic
 
 ## Maths Operators
@@ -35,6 +39,7 @@ Try the following code snippet:
     printf("The printf function has run %d times \n", numPrints);
 
 ```
+
 
 ## i++
 
@@ -130,6 +135,7 @@ Write a command line application that accepts a bill amount and return to the us
 
 
 \newpage
+
 ## Logic
 
 This section will help you add some "intelligence" or decision making abilities your programs. By the end of this section you will be able to write programs that respond to a variety of different input conditions, and we will conclude this chapter by writing a very simple game. 
@@ -169,7 +175,7 @@ In the previous example there was only one "correct" answer. When you run the pr
 
 By adding an else condition we can catch all the other alternatives that our if test misses.
 
-The `else`
+The `else` condition is included in the snipped below: 
 
 ```
  if(input == 42){

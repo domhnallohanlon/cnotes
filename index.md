@@ -4,11 +4,11 @@ This module is delivered in 9 parts and focuses on introducing learners to the f
 
 ## 1: Input, Process, Output
 
-<a href="#!C1_input_process_outpud.md" class="btn btn-primary">View this Lecture</a>
+<a href="#!C1_input_process_outpudt.md" class="btn btn-primary">View this Lecture</a> <a href="01_input_process_output.pdf" class="btn btn-primary" target="_blank">Download this Lecture</a>
 
 ## 2: Arithmetic & Logic
 
-<a href="#!C2_arithmetic_logic.md" class="btn btn-primary">View this Lecture</a>
+<a href="#!C2_arithmetic_logic.md" class="btn btn-primary">View this Lecture</a><a href=""> </a><a href="02_arithmetic_logic.pdf" class="btn btn-primary" target="_blank">Download this Lecture</a>
 
 ## 3: Loops
 

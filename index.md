@@ -4,7 +4,7 @@ This module is delivered in 9 parts and focuses on introducing learners to the f
 
 ## 1: Input, Process, Output
 
-<a href="#!C1_input_process_outpudt.md" class="btn btn-primary">View this Lecture</a> <a href="01_input_process_output.pdf" class="btn btn-primary" target="_blank">Download this Lecture</a>
+<a href="#!C1_input_process_output.md" class="btn btn-primary">View this Lecture</a> <a href="01_input_process_output.pdf" class="btn btn-primary" target="_blank">Download this Lecture</a>
 
 ## 2: Arithmetic & Logic
 
@@ -13,3 +13,19 @@ This module is delivered in 9 parts and focuses on introducing learners to the f
 ## 3: Loops
 
 <a href="#!C3_loops.md" class="btn btn-primary">View this Lecture</a> <a href="03_loops.pdf" class="btn btn-primary" target="_blank">Download this Lecture</a>
+
+## 4: Libraries
+
+## 5: Sorting
+
+## 6: Pointers
+
+## 7: Stack & Heap
+
+## 8: Structs
+
+## 9: Reading & Writing
+
+## 10: Helpful Resources
+
+<a href="table.html" target="_blank">Searchable ASCII Table</a>

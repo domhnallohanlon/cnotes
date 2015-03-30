@@ -37,7 +37,7 @@
   * [For Loops](C3_loops.md#For_Loops)
   * [Break](C3_loops.md#Break)
   * [Continue](C3_loops.md#Continue)
-  * [Swithc](C3_loops.md#Switch)
+  * [Switch](C3_loops.md#Switch)
 
 [Quick Start Guides]()
 

@@ -38,3 +38,12 @@ It is important to note that the first item of an array has an index of 0 (lives
 
 ## Combining with Loops
 
+You can quickly scan items to or prints items from an array by using an incrementer to both keep track of the iterations of your loop and the location (index) in the array that you want to access.
+
+<code data-gist-id="43a7c5c405d31f8670ca"></code>
+
+
+## Working with unknows
+
+Let's say that you want your user to enter all their test results  - the only problem is you don't know in advance how many exams they've taken. Take a look at the code below and see if you can understand what's going on.
+

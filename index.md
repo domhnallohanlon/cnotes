@@ -14,9 +14,12 @@ This module is delivered in 9 parts and focuses on introducing learners to the f
 
 <a href="#!C3_loops.md" class="btn btn-primary">View this Lecture</a> <a href="03_loops.pdf" class="btn btn-primary" target="_blank">Download this Lecture</a>
 
-## 4: Libraries
+## 4: Arrays & Strings
+<a href="#!C10_arrays.md" class="btn btn-primary">View Arrays Lecture</a> <a href="#!C11_strings.md" class="btn btn-primary">View Strings Lecture</a>
 
-## 5: Sorting
+## 5: Functions & Sorting
+
+<a href="#!C12_functions.md" class="btn btn-primary">View Functions Lecture</a>
 
 ## 6: Pointers
 

@@ -39,10 +39,25 @@
   * [Continue](C3_loops.md#Continue)
   * [Switch](C3_loops.md#Switch)
 
+[4: Arrays & Strings]()
+
+  * [Arrays](C10_arrays.md)
+  * [Strings](C11_strings.md)
+  * [Challenge](C11_strings.md#Coding_Challenge)
+
+[5: Functions & Sorting]()
+
+  * [Functions](C12_functions.md)
+  * [Challenge](C12_functions.md#Maths)
+
 [Quick Start Guides]()
 
  * [Sublime Text](sublime.md)
- * [Parts Guide](parts.md)
+ * [Codeblocks]()
+ * [Git]()
+ * [ASCII Table](table.html)
+ * [Escape Characters]()
+ * [Conversion Characters]()
 
 [gimmick:theme (inverse:false)](flatly)
 

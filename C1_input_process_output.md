@@ -52,23 +52,55 @@ Multi line comments span two or more lines.
 
 ## Escape Characters
 
-sequence    | output
-------------|--------
-`\a`        | alert
-`\n`        | new line
-`\t`        | tab 
+What if you wanted print the words *Hello* and *World* on seperate lines? How would you insert a line break into your text? In the example above, the text you want to display is contained between double quotes, but what if you wanted to display some dialog, like, *Domhnall said "hello world"*, how do you display double quotes without inadvertently closing one string and opening another by accident? Try it if you like.
 
-Many More!
+The solution is to use *escape characters*. This means the symbol you want to display is escaped by placing a backslash, `\`,  in front of it. Try the following example
+
+``` 
+
+    #include <stdio.h>
+    #include <stdlib.h>
+
+    int main(){
+      printf("Alice said \"Hello World\" \n Bob said \"Hello World\" too.");
+
+      return 0;
+    }
+
+```
+
+sequence| output
+------|-------------------
+`\a`  |  Alarm (Beep, Bell)
+`\b`  |  Backspace
+`\f`  |  Formfeed
+`\n`  |  Newline (Line Feed);
+`\r`  |  Carriage Return
+`\t`  |  Horizontal Tab
+`\v`  |  Vertical Tab
+`\\`  |  Backslash
+`\'`  |  Single quotation mark
+`\"`  |  Double quotation mark
+`\?`  |  Question mark
+`\nnn` |  A character where nnn interpreted as an octal number
+`\xhh` | The character where hh interpreted as a hexadecimal number
 
 
 ## Conversion Characters
 
-Data Type   | Character
+Character   | Argument to Display
 ------------|------------
-String      |   %s
-int         |   %d
-float       |   %f
-pointer     |   %p
+   `%c`     | Single character
+   `%d`     | Signed decimal integer (int)
+   `%e`     | Signed floating-point value in E notation
+   `%f`     | Signed floating-point value (float)
+   `%g`     | Signed value in %e or %f format, whichever is shorter
+   `%i`     | Signed decimal integer (int)
+   `%o`     | Unsigned octal (base 8) integer (int)
+   `%s`     | String of text
+   `%u`     | Unsigned decimal integer (int)
+   `%x`     | Unsigned hexadecimal (base 16) integer (int)
+   `%%`     | (percent character)
 
 It is also possible to output a specific number of digits from a float like so:
 
@@ -186,9 +218,22 @@ Long            | long          | 80 bit  | 19 decimal places
 
 <!-- \newpage -->
 
+## Arrays
+
+We'll explore arrays in more detail in <a href="#!C10_arrays.md">chapter 4</a> so this is just a quick introduction. As you may know already, an array is simply a collection of data. The only syntactic difference between a primative data type and an array is an extra set of square brackets e.g.`int integerArray[];` Each new element of an array is seperated by a comma. For example, you might use an array to store your lotto numbers: `int luckyNums[] = [4,8,15,16,23,42];`
+
+### Indexing
+
+What is we want to know,for example, what the third element of an array is? Well, we can look it up using it's **index**. Just like with a book, an index is used to look up information you want to find. Now intuitively you might think that the third element of an array would be found at index 3 - however C, like that vast majority of programming languages, start indexing arrays at 0. This means the the first elements is at index 0, the second is at index 1 and so on. So to print our third lottery number to the console we could write:
+
+``` 
+  printf("%d", luckyNums[i]);
+```
+<!-- \newpage -->
+
 ## Working with Strings
 
-Unlike other (primative) variable types, strings are instantiated using `String` with a capital S. This is because a string is actually an array of `chars` - in other words a collection of characters.
+Unlike other (primative) variable types, strings are instantiated using `String` with a capital S. This is because a string is actually an array of `chars` - in other words a collection of characters. For more detail in working with strings see <a href="#!C11_strings.md">chapter 4</a> 
 
 ### String Terminator
 
@@ -201,19 +246,6 @@ When you go to run your code the C compiler needs to know where every string end
 To overwrite an existing string use the `strcpy()` function. This function takes two **arguments** or parameters. Remember, the `strcpy()` function can be used to overwrite *any* string, so the first thing you need to tell is is what string to replace, then you need to tell it what to replace it with.
 
 
-<!-- \newpage -->
-
-## Arrays
-
-Let's explore arrays in a bit more detail. As mentioned already, an array is simply a collection of data. The only syntactic difference between a primative data type and an array is an extra set of square brackets e.g.`int integerArray[];` Each new element of an array is seperated by a comma. For example, you might use an array to store your lotto numbers: `int luckyNums[] = [4,8,15,16,23,42];`
-
-### Indexing
-
-What is we want to know,for example, what the third element of an array is? Well, we can look it up using it's **index**. Just like with a book, an index is used to look up information you want to find. Now intuitively you might think that the third element of an array would be found at index 3 - however C, like that vast majority of programming languages, start indexing arrays at 0. This means the the first elements is at index 0, the second is at index 1 and so on. So to print our third lottery number to the console we could write:
-
-``` 
-  printf("%d", luckyNums[i]);
-```
 
 <!-- \newpage -->
 

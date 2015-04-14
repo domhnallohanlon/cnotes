@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ASCII Table</title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" 
+	href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+	<script type="text/javascript" 
+	src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" 
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+	<h3>Searchable ASCII Table</h3>
+</div>	
+
+<div class="table-responsive">
+<table id="myTable" class="table table-striped" width="100%" >
+<thead><tr><th>Char</th><th>Dec</th><th>Oct</th><th>Hex</th></tr></thead>
+	<tbody>
+	<tr><td>(nul)</td><td>0</td><td>0000</td><td>0x00</td> </tr><tr><td>(soh)</td><td>1</td><td>0001</td><td>0x01</td> </tr><tr><td>(stx)</td><td>2</td><td>0002</td><td>0x02</td> </tr><tr><td>(etx)</td><td>3</td><td>0003</td><td>0x03</td> </tr><tr><td>(eot)</td><td>4</td><td>0004</td><td>0x04</td> </tr><tr><td>(enq)</td><td>5</td><td>0005</td><td>0x05</td> </tr><tr><td>(ack)</td><td>6</td><td>0006</td><td>0x06</td> </tr><tr><td>(bel)</td><td>7</td><td>0007</td><td>0x07</td> </tr><tr><td>(bs)</td><td>8</td><td>0010</td><td>0x08</td> </tr><tr><td>(ht)</td><td>9</td><td>0011</td><td>0x09</td> </tr><tr><td>(nl)</td><td>10</td><td>0012</td><td>0x0a</td> </tr><tr><td>(vt)</td><td>11</td><td>0013</td><td>0x0b</td> </tr><tr><td>(np)</td><td>12</td><td>0014</td><td>0x0c</td> </tr><tr><td>(cr)</td><td>13</td><td>0015</td><td>0x0d</td> </tr><tr><td>(so)</td><td>14</td><td>0016</td><td>0x0e</td> </tr><tr><td>(si)</td><td>15</td><td>0017</td><td>0x0f</td> </tr><tr><td>(dle)</td><td>16</td><td>0020</td><td>0x10</td> </tr><tr><td>(dc1)</td><td>17</td><td>0021</td><td>0x11</td> </tr><tr><td>(dc2)</td><td>18</td><td>0022</td><td>0x12</td> </tr><tr><td>(dc3)</td><td>19</td><td>0023</td><td>0x13</td> </tr><tr><td>(dc4)</td><td>20</td><td>0024</td><td>0x14</td> </tr><tr><td>(nak)</td><td>21</td><td>0025</td><td>0x15</td> </tr><tr><td>(syn)</td><td>22</td><td>0026</td><td>0x16</td> </tr><tr><td>(etb)</td><td>23</td><td>0027</td><td>0x17</td> </tr><tr><td>(can)</td><td>24</td><td>0030</td><td>0x18</td> </tr><tr><td>(em)</td><td>25</td><td>0031</td><td>0x19</td> </tr><tr><td>(sub)</td><td>26</td><td>0032</td><td>0x1a</td> </tr><tr><td>(esc)</td><td>27</td><td>0033</td><td>0x1b</td> </tr><tr><td>(fs)</td><td>28</td><td>0034</td><td>0x1c</td> </tr><tr><td>(gs)</td><td>29</td><td>0035</td><td>0x1d</td> </tr><tr><td>(rs)</td><td>30</td><td>0036</td><td>0x1e</td> </tr><tr><td>(us)</td><td>31</td><td>0037</td><td>0x1f</td> </tr><tr><td>(sp)</td><td>32</td><td>0040</td><td>0x20</td> </tr><tr><td>!</td><td>33</td><td>0041</td><td>0x21</td> </tr><tr><td>"</td><td>34</td><td>0042</td><td>0x22</td> </tr><tr><td>#</td><td>35</td><td>0043</td><td>0x23</td> </tr><tr><td>$</td><td>36</td><td>0044</td><td>0x24</td> </tr><tr><td>%</td><td>37</td><td>0045</td><td>0x25</td> </tr><tr><td>&amp;</td><td>38</td><td>0046</td><td>0x26</td> </tr><tr><td>'</td><td>39</td><td>0047</td><td>0x27</td> </tr><tr><td>(</td><td>40</td><td>0050</td><td>0x28</td> </tr><tr><td>)</td><td>41</td><td>0051</td><td>0x29</td> </tr><tr><td>*</td><td>42</td><td>0052</td><td>0x2a</td> </tr><tr><td>+</td><td>43</td><td>0053</td><td>0x2b</td> </tr><tr><td>,</td><td>44</td><td>0054</td><td>0x2c</td> </tr><tr><td>-</td><td>45</td><td>0055</td><td>0x2d</td> </tr><tr><td>.</td><td>46</td><td>0056</td><td>0x2e</td> </tr><tr><td>/</td><td>47</td><td>0057</td><td>0x2f</td> </tr><tr><td>0</td><td>48</td><td>0060</td><td>0x30</td> </tr><tr><td>1</td><td>49</td><td>0061</td><td>0x31</td> </tr><tr><td>2</td><td>50</td><td>0062</td><td>0x32</td> </tr><tr><td>3</td><td>51</td><td>0063</td><td>0x33</td> </tr><tr><td>4</td><td>52</td><td>0064</td><td>0x34</td> </tr><tr><td>5</td><td>53</td><td>0065</td><td>0x35</td> </tr><tr><td>6</td><td>54</td><td>0066</td><td>0x36</td> </tr><tr><td>7</td><td>55</td><td>0067</td><td>0x37</td> </tr><tr><td>8</td><td>56</td><td>0070</td><td>0x38</td> </tr><tr><td>9</td><td>57</td><td>0071</td><td>0x39</td> </tr><tr><td>:</td><td>58</td><td>0072</td><td>0x3a</td> </tr><tr><td>;</td><td>59</td><td>0073</td><td>0x3b</td> </tr><tr><td>&lt;</td><td>60</td><td>0074</td><td>0x3c</td> </tr><tr><td>=</td><td>61</td><td>0075</td><td>0x3d</td> </tr><tr><td>&gt;</td><td>62</td><td>0076</td><td>0x3e</td> </tr><tr><td>?</td><td>63</td><td>0077</td><td>0x3f</td> </tr><tr><td>@</td><td>64</td><td>0100</td><td>0x40</td> </tr><tr><td>A</td><td>65</td><td>0101</td><td>0x41</td> </tr><tr><td>B</td><td>66</td><td>0102</td><td>0x42</td> </tr><tr><td>C</td><td>67</td><td>0103</td><td>0x43</td> </tr><tr><td>D</td><td>68</td><td>0104</td><td>0x44</td> </tr><tr><td>E</td><td>69</td><td>0105</td><td>0x45</td> </tr><tr><td>F</td><td>70</td><td>0106</td><td>0x46</td> </tr><tr><td>G</td><td>71</td><td>0107</td><td>0x47</td> </tr><tr><td>H</td><td>72</td><td>0110</td><td>0x48</td> </tr><tr><td>I</td><td>73</td><td>0111</td><td>0x49</td> </tr><tr><td>J</td><td>74</td><td>0112</td><td>0x4a</td> </tr><tr><td>K</td><td>75</td><td>0113</td><td>0x4b</td> </tr><tr><td>L</td><td>76</td><td>0114</td><td>0x4c</td> </tr><tr><td>M</td><td>77</td><td>0115</td><td>0x4d</td> </tr><tr><td>N</td><td>78</td><td>0116</td><td>0x4e</td> </tr><tr><td>O</td><td>79</td><td>0117</td><td>0x4f</td> </tr><tr><td>P</td><td>80</td><td>0120</td><td>0x50</td> </tr><tr><td>Q</td><td>81</td><td>0121</td><td>0x51</td> </tr><tr><td>R</td><td>82</td><td>0122</td><td>0x52</td> </tr><tr><td>S</td><td>83</td><td>0123</td><td>0x53</td> </tr><tr><td>T</td><td>84</td><td>0124</td><td>0x54</td> </tr><tr><td>U</td><td>85</td><td>0125</td><td>0x55</td> </tr><tr><td>V</td><td>86</td><td>0126</td><td>0x56</td> </tr><tr><td>W</td><td>87</td><td>0127</td><td>0x57</td> </tr><tr><td>X</td><td>88</td><td>0130</td><td>0x58</td> </tr><tr><td>Y</td><td>89</td><td>0131</td><td>0x59</td> </tr><tr><td>Z</td><td>90</td><td>0132</td><td>0x5a</td> </tr><tr><td>[</td><td>91</td><td>0133</td><td>0x5b</td> </tr><tr><td>\</td><td>92</td><td>0134</td><td>0x5c</td> </tr><tr><td>]</td><td>93</td><td>0135</td><td>0x5d</td> </tr><tr><td>^</td><td>94</td><td>0136</td><td>0x5e</td> </tr><tr><td>_</td><td>95</td><td>0137</td><td>0x5f</td> </tr><tr><td>`</td><td>96</td><td>0140</td><td>0x60</td> </tr><tr><td>a</td><td>97</td><td>0141</td><td>0x61</td> </tr><tr><td>b</td><td>98</td><td>0142</td><td>0x62</td> </tr><tr><td>c</td><td>99</td><td>0143</td><td>0x63</td> </tr><tr><td>d</td><td>100</td><td>0144</td><td>0x64</td> </tr><tr><td>e</td><td>101</td><td>0145</td><td>0x65</td> </tr><tr><td>f</td><td>102</td><td>0146</td><td>0x66</td> </tr><tr><td>g</td><td>103</td><td>0147</td><td>0x67</td> </tr><tr><td>h</td><td>104</td><td>0150</td><td>0x68</td> </tr><tr><td>i</td><td>105</td><td>0151</td><td>0x69</td> </tr><tr><td>j</td><td>106</td><td>0152</td><td>0x6a</td> </tr><tr><td>k</td><td>107</td><td>0153</td><td>0x6b</td> </tr><tr><td>l</td><td>108</td><td>0154</td><td>0x6c</td> </tr><tr><td>m</td><td>109</td><td>0155</td><td>0x6d</td> </tr><tr><td>n</td><td>110</td><td>0156</td><td>0x6e</td> </tr><tr><td>o</td><td>111</td><td>0157</td><td>0x6f</td> </tr><tr><td>p</td><td>112</td><td>0160</td><td>0x70</td> </tr><tr><td>q</td><td>113</td><td>0161</td><td>0x71</td> </tr><tr><td>r</td><td>114</td><td>0162</td><td>0x72</td> </tr><tr><td>s</td><td>115</td><td>0163</td><td>0x73</td> </tr><tr><td>t</td><td>116</td><td>0164</td><td>0x74</td> </tr><tr><td>u</td><td>117</td><td>0165</td><td>0x75</td> </tr><tr><td>v</td><td>118</td><td>0166</td><td>0x76</td> </tr><tr><td>w</td><td>119</td><td>0167</td><td>0x77</td> </tr><tr><td>x</td><td>120</td><td>0170</td><td>0x78</td> </tr><tr><td>y</td><td>121</td><td>0171</td><td>0x79</td> </tr><tr><td>z</td><td>122</td><td>0172</td><td>0x7a</td> </tr><tr><td>{</td><td>123</td><td>0173</td><td>0x7b</td> </tr><tr><td>|</td><td>124</td><td>0174</td><td>0x7c</td> </tr><tr><td>}</td><td>125</td><td>0175</td><td>0x7d</td> </tr><tr><td>~</td><td>126</td><td>0176</td><td>0x7e</td> </tr><tr><td>(del)</td><td>127</td><td>0177</td><td>0x7f</td> </tr></tbody>
+</table>
+</div>
+
+
+</div>	
+
+
+<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});
+</script>
+</body>
+</html>

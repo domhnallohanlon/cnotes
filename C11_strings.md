@@ -1,7 +1,7 @@
 # Strings
 
 In other lanugages, such as Java, there are dedicated *String* data types, but in C the convention is to use an array of chars, which does essentially the exact same thing. A C string is any array of chars followed by the null character, `\0`. The null character is also known as the string terminator (see figure 1).
-This section outlines a number of different ways that strings can be created in C, as well as looking at how to manipulate stings with functions from the `strings.h` library. 
+This section outlines a number of different ways that strings can be created in C, as well as looking at how to manipulate stings with functions from the `string.h` library. 
 ![I'll be back](images/terminator.jpg "A different kind of Terminator") 
 
 ## Array of Chars
@@ -15,7 +15,7 @@ The long way of creating a string is  one character at a time, so if you really 
 Note that when working with chars that each element of the array has to be inside single quotes. A more concise way to acheive exactly the same thing is by enclosing your message in double quotes like so:
 
 ```
-  char str2[20] = "Hello World!"
+  char str2[20] = "Hello World!";
 ```
 
 
@@ -32,6 +32,8 @@ To copy a string use the `strcpy()` function. This function accepts two argument
 What do you expect the output of the following gist will be?
 
 <code data-gist-id="a11b3d388b4e5d3f8fe7"></code>
+<a href="https://gist.github.com/domhnallohanlon/a11b3d388b4e5d3f8fe7/download" class="text-success pull-right">Download Code</a><br>
+
 
 ### Measuring Strings
 

@@ -23,6 +23,8 @@ This module is delivered in 9 parts and focuses on introducing learners to the f
 
 ## 6: Pointers
 
+<a href="#!C6_pointers.md" class="btn btn-primary">View Pointers Lecture</a>
+
 ## 7: Stack & Heap
 
 ## 8: Structs

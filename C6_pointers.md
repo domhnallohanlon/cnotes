@@ -1,13 +1,17 @@
-## Pointers 
+# Pointers 
 
-The topic of pointers in C is one that many beginners find challenging. In order to understand pointers it is first imperative that you have a strong grasp of the variables that we have been programming with so far.
+The topic of pointers in C is one that many beginners find challenging, but once you get comfortable with them your applications will become more powerful and more efficient. 
+
+## Welcome to the Hotel California
+
+A pointer is a special type of variable (it's actually a constant!) whose value is the memory address of another variable. To help you visualise this, image a hotel with lots of floors, and many rooms on each floor. The rooms are analogous to locations in computer memory in that they don't ever change their pyhsical location or address. The occupants of the rooms however can change - so your hotel visitors are like programming variables, free to come and go as they please and easily replaced by other variables. ~~We can also extend this analogy a bit by considering twin rooms, double rooms, suites etc. These types of rooms might correspond to different types of data~~
+![Pointers](images/keys.jpg "Pointers")
 
 
-A pointer is a special type of variable (it's actually a constant?) whose value is the memory address of another variable. (make this sound less confusing)
+A pointer variable is declared by prefacing its name with an asterisk. The address in memory is a numeric value so it's ok to use an interger as the type, but by starting your variable name with an asterisk (star) rather an a letter you are telling the compiler that this variable is actually a pointer rather than a conventional integer. 
 
-A pointer variable is declared by prefacing its name with an asterisk:
 
-```C
+```
  int main(){
      int *pointer;
      
@@ -15,11 +19,23 @@ A pointer variable is declared by prefacing its name with an asterisk:
  }
 ```
 
-### Convention
+You can still declare multiple varaible on one line, but each pointer has to start with `*`
+
+```
+int main(){
+    /*one pointer and one integer*/
+    int *my_pointer, not_a_pointer;
+
+    /*two pointers*/
+    int *first_pointer, *second_pointer;
+}
+```
+
+## Convention
 
 In many cases the accepted convention is to start a pointer variable with the letter p, for example:
 
-```C
+```
  int main(){
     //create an integer variable
      int age;
@@ -58,11 +74,11 @@ We can echo a memory address to the console using something like the following s
 Take for example: `int myInt = 42`, this can store any numeric value between x and y. It has a memory address and we can create `int * pMyInt = &myInt`
 
 
-### Dereference Pointer
+## Dereference Pointer
 
 If you want to retrieve the value that a pointer points to (as opposed to the address that it points to) then you use the unary operator, `*`, which is used to dereference the pointer.
 
-```C
+```
  int i = 42;
  int *prt = &i;
 
@@ -76,7 +92,7 @@ If you want to retrieve the value that a pointer points to (as opposed to the ad
 ```
 
 
-### Arrays and Pointers
+## Arrays and Pointers
  create and array of vars
  loop through the array and print it's contents, and memory pointer.
 
@@ -98,7 +114,7 @@ However, using a pointer to the array (which is a variable) we can assign new va
 
 ### Test it Out
 
-```C
+```
  int main(){
     j = 1;
     k = 2;

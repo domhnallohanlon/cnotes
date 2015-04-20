@@ -4,7 +4,7 @@ As you've no doubt seen during your maths studies, a function is something that 
 
 ## Creating Functions
 
-So, what data type does a function have? Well, that depends on what type of data it returns. If you want to create a function that squares two numbers and returns the result then it will probably have an integer type. If you want to get the average or root of some numbers then it probably makes more sense to use a float. The process of creating a function is known as **declaring** a function. The code associated with how the function actually performs is known as the **definition** of the function. Let's create a simple function that squares an integer input:
+So, what data type does a function have? Well, that depends on what type of data it returns. If you want to create a function that squares two numbers and returns the result then it will probably have an integer type. If you want to get the average or root of some numbers then it makes more sense to use a float. The process of creating a function is known as **declaring** a function. Typically, functions are declared just below any `#include` calls at the beginning of your code. This declaration tells the compiler not just what return type to expect but all the number and type of arguments the function accepts. This can also be refered to as the function **prototype**.  The code associated with how the function actually performs is known as the **definition** of the function. Let's create a simple function that squares an integer input:
 
 ```
 #include <stdio.h> 

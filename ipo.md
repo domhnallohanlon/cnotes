@@ -24,7 +24,6 @@ In this secion you will write your first C programs, and learn about the differn
 
 ```
 
-<!-- \newpage -->
 
 ## Analysis
 
@@ -57,7 +56,7 @@ Multi line comments, which can span one or more lines. A multi line comment begi
 ```
 
 Originally C only supported multi line comments and support for single line comemnts was introduced after the release of the C++ language. For full backwards compatibility with older compilers it is recommended that you always use multiline comments.
-<!-- \newpage -->
+
 
 ## Escape Characters
 
@@ -65,6 +64,7 @@ What if you wanted print the words *Hello* and *World* on seperate lines? How wo
 
 The solution is to use **escape characters**. This means the symbol you want to display, or keyboard character you want to enter,  is escaped by placing a backslash, `\`,  in front of it. Try the following example
 
+<!-- \newpage -->
 ``` 
 
     #include <stdio.h>
@@ -97,7 +97,7 @@ sequence| output
 `\nnn` |  A character where nnn interpreted as an octal number
 `\xhh` | The character where hh interpreted as a hexadecimal number
 
-<!-- \newpage --> 
+\newpage 
 
 ## Variables
 
@@ -126,6 +126,9 @@ Variable Name   | C Identifier  | Size    | Precision
 Float           | float         | 32 bit  | 6 decimal places
 Double          | double        | 64 bit  | 15 decimal places
 Long            | long          | 80 bit  | 19 decimal places
+
+
+\newpage
 
 ## Conversion Characters
 
@@ -159,6 +162,9 @@ Character   | Argument to Display
    `%u`     | Unsigned decimal integer (int)
    `%x`     | Unsigned hexadecimal (base 16) integer (int)
    `%%`     | (percent character)
+
+
+\newpage
 
 ## Examples
 
@@ -199,6 +205,8 @@ To make your life easier you can also **declare** and **initialise** a variable 
   float pi = 3.141593;
 ```
 
+\newpage
+
 ## Arrays
 
 We'll explore arrays in more detail in <a href="#!C10_arrays.md">chapter 4</a> so this is just a quick introduction. As you may know already, an array is simply a collection of data. The only syntactic difference between a primative data type and an array is an extra set of square brackets e.g.`int integerArray[];` Each new element of an array is seperated by a comma. For example, you might use an array to store your lotto numbers: `int luckyNums[] = [4,8,15,16,23,42];`
@@ -211,6 +219,7 @@ What is we want to know,for example, what the third element of an array is? Well
   printf("%d", luckyNums[i]);
 ```
 
+\newpage
 
 ## Input!!
 
@@ -249,7 +258,10 @@ Improve the snippet above so that it asks the user for their name and then greet
 
 <!-- **stretch goal** use system time and users D.o.B to get exact age, or to create a birthday countdown. -->
 
+\newpage
 
-## Downloads
+###Summary
 
-<a href="https://domhnallohanlon.github.io/cnotes/01_input_process_output.pdf" class="btn btn-primary">Download Notes as PDF</a>
+<!-- ## Downloads
+
+<a href="https://domhnallohanlon.github.io/cnotes/01_input_process_output.pdf" class="btn btn-primary">Download Notes as PDF</a> -->

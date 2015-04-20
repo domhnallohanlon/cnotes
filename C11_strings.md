@@ -1,6 +1,10 @@
+<!-- ## Working with Strings
+
+Unlike other (primative) variable types, strings are instantiated using `String` with a capital S. This is because a string is actually an array of `chars` - in other words a collection of characters.  -->
 # Strings
 
 In other lanugages, such as Java, there are dedicated *String* data types, but in C the convention is to use an array of chars, which does essentially the exact same thing. A C string is any array of chars followed by the null character, `\0`. The null character is also known as the string terminator (see figure 1).
+When you go to run your code the C compiler needs to know where every string ends, or terminates. To do this, the compiler parses your program and everywhere it finds closing quotation marks it insterts a character known as the **string terminator**. The string terminator is simply `\0` and takes up one additional byte of memory. This means that if you create a String variable to store your name, and if your name is 8 characters long, the name variable will actually take up 9 bytes of memory. 
 This section outlines a number of different ways that strings can be created in C, as well as looking at how to manipulate stings with functions from the `string.h` library. 
 ![I'll be back](images/terminator.jpg "A different kind of Terminator") 
 
@@ -27,7 +31,7 @@ Since the original C language doesn't contain functions for working with strings
 
 ### Copying Strings
 
-To copy a string use the `strcpy()` function. This function accepts two arguments, first is the string that you want to copy into (overwrite) and the second is the string you want to copy (duplicate).
+To overwrite an existing string use the `strcpy()` function. This function takes two **arguments** or parameters. Remember, the `strcpy()` function can be used to overwrite *any* string, so the first thing you need to tell is is what string to replace (overwrite), then you need to tell it what to replace it with i.e. the string you wish to duplicate.
 
 What do you expect the output of the following gist will be?
 
@@ -42,6 +46,7 @@ To find the length of a string simply use `strlen()` function. This function onl
 ### Joining Strings
 
 In many areas, particularly when working with databases, you frequently have to put two (or more) strings of text together. This joining operation is known as **concatenation**. 
+`strcat()`
 
 ### Comparing Strings
 

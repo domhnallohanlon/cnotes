@@ -4,6 +4,50 @@
 
 # Part 2: Arithmetic and Logic
 
+## Arithmetic
+
+You will recall that a computer is defined as a machine that can perform arithmetic and logic operations. So far we've done neither, so we'll try a bit of arithmetic. `+` and `-` have the same meaing as you would expect from maths, `*` is used to denote multiplication and `\` is used for division.
+
+``` 
+  int main(){
+
+    //declare an integer variable
+    int a = 7;
+    
+    //return the int squared
+    printf(a*a); 
+
+    return 0;
+  }
+
+```
+
+
+
+Great...let's try some more. You code will execute from top to bottom, so new values can be assigned "on-the-fly":
+
+``` 
+  int main(){
+
+    int currentYear = 2015;
+    int zuckerBorn = 1984;
+    int babyGates = 1955;
+    int age;
+
+    //calculates how old Mark Zuckerberg is:
+    age = currentYear - zuckerBorn;
+      printf("Mark Zuckerberg is %d years old \n", age);
+
+    //here we reuse the age variable to compute how old Bill Gates is.
+    age = currentYear - babyGates;
+      printf("Bill Gates is %d years old \n", age);
+
+      return 0;
+
+  }
+```
+
+
 ## Maths Operators
 
 Also known as binary operators, these mathematical operators require two operands to produce an output. For example, 40 + 2 = 42 requires two inputs to produce an output. As we will see later, programming languages also support unary opeartors.

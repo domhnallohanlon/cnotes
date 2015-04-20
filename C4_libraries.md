@@ -4,6 +4,24 @@
 
 # Part 4: Libraries (.h files)
 
+## Preprocessor Directives
+
+Up until now we haven't really paid any great attention to the `#include` code at the beginning of our programs. The `.h` files that are included are known as header files or preprocessor directives. This is because the contents of these files are called *before* the main.c is compiled.
+
+
+### Writing a simple header.
+
+Lets create a header with some commonly used mathematical constants
+
+```
+ DEFINE PI = 3.141593
+ DEFINE EULER = 1.6
+```
+
+If you're using an IDE you'll see that this new .h file is saved in a new folder called "headers". Typically your compiler will expect your headers to be in a predefined location ------ and this is implied in the code by using brackets `#include <someHeader.h>` however, our hearder is stored in the same directory as our source code so acccess it we use quotation marks instead:
+`#include "myHeader.h"`
+
+
 ## stdio.h
 
 We've been using the C **st**andar**d** **i**nput **o**utput library for a while now, so let's take a closer look at what it contains and some of the other functions it gives us access too.  

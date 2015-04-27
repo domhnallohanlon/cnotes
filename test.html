@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title Page</title>
+		<title>Code Snippets</title>
 
 		<!-- Bootstrap CSS -->
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -16,25 +16,43 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
-		<div class="container">
+<body>
+	<div class="container">
+		<div class="row">
+			<h2> Challenge Yourself</h2>
+			<p>The following programs are challenges are designed to test your understanding of the material we covered in Chapter 3</p>
+
+			<h3>Some variables are more equal than others...</h3>
+			<p>Create a program to compare the values of two variables. You should test for the following conditions: <br>
+			<code>&gt;, &lt;, &gt;=, &lt;=, ==, !=</code><br>
+			You should tell your user which of the above comparissons you were using and what it returned, i.e. 0 or 1.
+			</p>
 			<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-			  Link with href
+			  Show Code
 			</a>
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-			  Button with data-target
-			</button>
 			<div class="collapse" id="collapseExample">
 			  <div class="well">
-			    Now you see me, now you don't
+			    <code data-gist-id="c11031cbc86836811d7e" data-gist-hide-footer="true" data-gist-file="conditions01.c"></code>	
 			  </div>
 			</div>
-
 		</div>
+		<div class="row">
+			<h3>If this, then that.</h3>
+			<p>Using the same two variables check if i is less than j, j is less than i or if both are equal.</p>
+			<a href="#code2" class="btn btn-primary" data-toggle="collapse">
+				Show code
+			</a>
+			<div class="collapse" id="code2">
+				<code data-gist-id="c11031cbc86836811d7e" data-gist-hide-footer="true" data-gist-file="conditions02.c"></code>
+			</div>
+		</div>
+	</div> <!-- end of container -->
 
-		<!-- jQuery -->
-		<script src="//code.jquery.com/jquery.js"></script>
-		<!-- Bootstrap JavaScript -->
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	</body>
+	<!-- jQuery -->
+	<script src="//code.jquery.com/jquery.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<!-- Gist Embed -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/2.1/gist-embed.min.js"></script>
+</body>
 </html>

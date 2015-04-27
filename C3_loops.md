@@ -16,7 +16,7 @@ How would you avoid getting stuck in an _infinite loop_?
 
 When you creating a loop in any programming language you will have tell it when and where to start. Starting a loop is known as __initialising__ the loop.
 
-Next you will have some code to run - for example increment at counter, print some text etc. - while the loop is running. 
+Next you will have some code to run - for example increment at counter, print some text etc. - while the loop is running.
 
 Finally you need an end condition. Once this condition is met or exceeded then the loop should exit gracefully.
 
@@ -28,14 +28,14 @@ A `while` loop, as the name implies, executes while a certains condition is true
 
 ```
  int main(){
-     
+
      int counter = 0;
 
         while(counter < 10){
             printf("the value of the counter is: %d \n", counter);
             counter++
         }
-     
+
     printf("successfully exited the while loop! \n");
 
      return 0;
@@ -68,11 +68,11 @@ Be careful if you are changing the direction of the inequality!
 
 Here's a simple example you can code using `while` loops. Which would you preferm, one million euro today or 1 cent, doubled every day for a month (30 days)?
 
-Your loop should run 30 times, doubling the value of your variable each time. 
+Your loop should run 30 times, doubling the value of your variable each time.
 
 ## Do While
 
-With a `while` loop there is always a possibility that the test condition will never be true and that the code within the loop will never run. 
+With a `while` loop there is always a possibility that the test condition will never be true and that the code within the loop will never run.
 
 A `do while` loop differs from a `while` loop in that it will always run at least once, and the conditional check is performed at the end of the loop, rather than at the beginning.
 
@@ -102,13 +102,13 @@ The `for` loop contains the starting condition, end condition and incrementer al
 
 ```
  int main(){
-     
+
      int counter;
 
      for(counter = 0; counter < 10; counter++){
         printf("Hello World!");
      }
-     
+
      return 0;
  }
 
@@ -125,7 +125,7 @@ The `for` loop contains the starting condition, end condition and incrementer al
 
 /* Print all the even numbers between 0 and 100 in 3 lines of code */
  int main(){
-     
+
      int i;
 
      for(i = 0; i <=100; i++){
@@ -133,7 +133,7 @@ The `for` loop contains the starting condition, end condition and incrementer al
             printf("%d \n", i);
         }
      }
-     
+
      return 0;
  }
 
@@ -141,7 +141,7 @@ The `for` loop contains the starting condition, end condition and incrementer al
 
 
 ### Nesting For loops
-A quick challenge to really test your understanding so far. 
+A quick challenge to really test your understanding so far.
 
 Create a program that has variables to represent the number of rows and number of colums that a table should have. Then use nested for loop to print a 3 x 3 table to the console.
 
@@ -152,7 +152,7 @@ Here's a simple example that modifies out doWhile application to exit before it 
 
 ```
  int main(){
-     
+
     int loopCounter = 1;
 
    /* do loop execution */
@@ -165,7 +165,7 @@ Here's a simple example that modifies out doWhile application to exit before it 
        loopCounter++;
    }while( loopCounter < 10 );
 
-     
+
      return 0;
  }
 
@@ -200,9 +200,9 @@ int main(){
      }else{
         type = 1;
      }
-     
+
      switch(type){
-        case(0): 
+        case(0):
             printf("The number is even\n");
             break;
         case(1):
@@ -219,7 +219,7 @@ int main(){
 
 
 ### Example 2
- 
+
 
 ```
    switch(grade)
@@ -255,3 +255,7 @@ Using a loop of your choosing:
 ## Download
 
 <a href="03_loops.pdf" target="_blank" class="btn btn-primary">Download Notes as PDF</a>
+
+## Examples
+
+<a href="#!C3_examples.md"> Try some of these examples </a>

@@ -50,7 +50,18 @@
   * [Functions](C12_functions.md)
   * [Challenge](C12_functions.md#Maths)
 
-[Quick Start Guides]()
+[6: Pointers & Structs]()
+
+  * [Pointers](C6_pointers.md)
+  * [Structs](C8_structs.md)
+
+[7: Reading & Writing]()
+
+  * [File IO](C9_reading_writing.md)
+
+[8: Stack & Heap]()
+
+[9: Resources]()
 
  * [Sublime Text](sublime.md)
  * [Codeblocks]()

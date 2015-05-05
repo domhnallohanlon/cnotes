@@ -21,16 +21,20 @@ This module is delivered in 9 parts and focuses on introducing learners to the f
 
 <a href="#!C12_functions.md" class="btn btn-primary">View Functions Lecture</a>
 
-## 6: Pointers
+## 6: Pointers & Structs
 
-<a href="#!C6_pointers.md" class="btn btn-primary">View Pointers Lecture</a>
+<a href="#!C6_pointers.md" class="btn btn-primary"> Pointers Lecture</a> <a 
+href="#!C8_structs.md" class="btn btn-primary"> Structs Lecture</a>
 
-## 7: Stack & Heap
+## 7: Reading & Writing
 
-## 8: Structs
+<a href="#!C9_reading_writing.md" class="btn btn-primary">View File IO Lecture</a>
 
-## 9: Reading & Writing
 
-## 10: Helpful Resources
+
+## 8: Stack & Heap
+
+
+## 9: Helpful Resources
 
 <a href="table.html" target="_blank">Searchable ASCII Table</a>

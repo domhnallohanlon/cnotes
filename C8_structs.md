@@ -30,6 +30,10 @@ The dot operator, `.`, is used to assess specific members (elements) of a struct
 
 <code data-gist-id="ac325c300d7f844db548" data-gist-file="structs1.c" data-gist-line="18-21" data-gist-hide-footer="true"></code>
 
+## Typedef
+
+With other data types
+
 ## Example Code
 
 Here is the complete code for this section:
@@ -38,3 +42,7 @@ Here is the complete code for this section:
 
 And the code for changing values:
 <code data-gist-id="ac325c300d7f844db548" data-gist-file="structs4.c"></code>
+
+Using pointers to modify values globally, rather than confined to the scope of the  `getTopSpeed()` function.
+
+<code data-gist-id="ac325c300d7f844db548" data-gist-file="structs5.c"></code>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+  
+
+</head>
+<body>
+<div id="structs" class="titleslide slide section level1"><h1>Structs</h1></div><div id="why-structures" class="slide section level2">
+<h1>Why Structures?</h1>
+<p>We've seen lots of examples so far of where we would want to store multiple pieces of information. Up until now we've always used an array, however the main drawback of using an array is that it can only store one <strong>type</strong> of information, like an array of ints or an array of chars. The main advantage of using a struct is that it allows you to use different types of data.</p>
+</div><div id="convention" class="slide section level2">
+<h1>Convention</h1>
+<p>The convention in C is to create your structs in a seperate header <code>.h</code> file, but for the time being we'll create them in our main.c files. In this lesson we'll create a basic car structure, make a few different cars and then modify them using a few functions we'll create ourselves.</p>
+</div><div id="creating-a-struct" class="slide section level2">
+<h1>Creating a struct</h1>
+<p>In something as complex as car, there are lots of different properties that we might want to assign. We can use strings to represent things like the make, model, features etc. numbers to represent properties such as horse power or top speed and arrays to capture the variety of engine sizes available, or perhaps types of fuel. The properties of a struct are contained between curly braces, and just like when you initialise any other data type, you must end your declaration with a semicolon.</p>
+<p><code data-gist-id="ac325c300d7f844db548" data-gist-file="structs1.c" data-gist-line="4-8" data-gist-hide-footer="true"></code></p>
+</div><div id="using-a-struct" class="slide section level2">
+<h1>Using a Struct</h1>
+<p>Now that we've created a prototype for all cars in general, we can now go ahead and make specific cars by using our car struct.</p>
+<p><code data-gist-id="ac325c300d7f844db548" data-gist-file="structs1.c" data-gist-line="14" data-gist-hide-footer="true"></code></p>
+</div><div id="the-dot-operator" class="slide section level2">
+<h1>The Dot Operator</h1>
+<p>The dot operator, <code>.</code>, is used to assess specific members (elements) of a struct. In the example of our car structure, it has properties, or elements corresponding to the make, model, horse power and, top speed. Each of these can be accessed using the syntax <code>name.element</code> like in the example below:</p>
+<p><code data-gist-id="ac325c300d7f844db548" data-gist-file="structs1.c" data-gist-line="18-21" data-gist-hide-footer="true"></code></p>
+</div><div id="example-code" class="slide section level2">
+<h1>Example Code</h1>
+<p>Here is the complete code for this section:</p>
+<p><code data-gist-id="ac325c300d7f844db548" data-gist-file="structs1.c"></code></p>
+<p>And the code for changing values: <code data-gist-id="ac325c300d7f844db548" data-gist-file="structs4.c"></code></p>
+</div>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.1/gist-embed.min.js"></script>
+</body>
+</html>

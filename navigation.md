@@ -60,6 +60,7 @@
   * [File IO](C9_reading_writing.md)
 
 [8: Stack & Heap]()
+  * [WIP]
 
 [9: Resources]()
 

@@ -1,14 +1,16 @@
-## Writing to Files
+# Reading & Writing to Disk
 
-###Motivation
+##Motivation
 
-###Types of Files
+##Types of Files
 
-####Sequential
+###Sequential
 
-#### Random Access
+### Random Access
 
-###Modifying with Files
+## Modifying Files
+
+To modify a give file you must have the appropriate permissions. 
 
 r - read
 w - write

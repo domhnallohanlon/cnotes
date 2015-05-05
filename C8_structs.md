@@ -35,3 +35,6 @@ The dot operator, `.`, is used to assess specific members (elements) of a struct
 Here is the complete code for this section:
 
 <code data-gist-id="ac325c300d7f844db548" data-gist-file="structs1.c"></code>
+
+And the code for changing values:
+<code data-gist-id="ac325c300d7f844db548" data-gist-file="structs4.c"></code>

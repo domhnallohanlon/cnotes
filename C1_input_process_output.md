@@ -201,7 +201,7 @@ To make your life easier you can also **declare** and **initialise** a variable 
 
 ## Arrays
 
-We'll explore arrays in more detail in <a href="#!C10_arrays.md">chapter 4</a> so this is just a quick introduction. As you may know already, an array is simply a collection of data. The only syntactic difference between a primative data type and an array is an extra set of square brackets e.g.`int integerArray[];` Each new element of an array is seperated by a comma. For example, you might use an array to store your lotto numbers: `int luckyNums[] = [4,8,15,16,23,42];`
+We'll explore arrays in more detail in <a href="#!C10_arrays.md">chapter 4</a> so this is just a quick introduction. As you may know already, an array is simply a collection of data. The only syntactic difference between a primative data type and an array is an extra set of square brackets e.g.`int integerArray[];` Each new element of an array is seperated by a comma. For example, you might use an array to store your lotto numbers: `int luckyNums[] = {4,8,15,16,23,42};`
 
 ### Indexing
 
@@ -226,7 +226,7 @@ Both `scanf()` and `printf()` are part of the `<stdio.h>` header, so hopefully t
 ```
  int myInt;
 
- scanf("%d", myInt);
+ scanf("%d", &myInt);
 ```
 
 

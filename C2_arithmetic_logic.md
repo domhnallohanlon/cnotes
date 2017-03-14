@@ -15,7 +15,7 @@ You will recall that a computer is defined as a machine that can perform arithme
     int a = 7;
     
     //return the int squared
-    printf(a*a); 
+    printf("%d", a*a); 
 
     return 0;
   }
@@ -160,8 +160,8 @@ Unlike many calculators, C is intelligent enough to understand this order and wi
 Try the following snippet as an example and see if you can come up with some others. 
 
 ```
-    printf(3 + 5 * 7); //returns 38
-    printf((3+5) * 7); //returns 56
+    printf("%d", 3 + 5 * 7); //returns 38
+    printf("%d", (3+5) * 7); //returns 56
 ```
 
 ## Programming Challenges

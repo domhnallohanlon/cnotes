@@ -245,7 +245,7 @@ If you build and run the previous example you will just see a console with a bli
 
 ### Challenge
 
-Improve the snippet above so that it asks the user for their name and then greets them personally.
+Improve the snippet above so that it asks the user for their year of birth and tells them their (approximate!) age.
 
 <!-- **stretch goal** use system time and users D.o.B to get exact age, or to create a birthday countdown. -->
 

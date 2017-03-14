@@ -237,7 +237,7 @@ If you build and run the previous example you will just see a console with a bli
  int age;
 
  printf("What year were you born in ? \n");
- scanf("%d", age);
+ scanf("%d", &age);
 
 ```
 

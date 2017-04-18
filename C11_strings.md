@@ -10,13 +10,13 @@ This section outlines a number of different ways that strings can be created in 
 
 ## Array of Chars
 
-The long way of creating a string is  one character at a time, so if you really want to you can do the following:
+The long way of creating a string is one character at a time so, if you really want to, you *could* do the following:
 
 ```
   char str1[20] = {'H','e','l','l','o',' ','W','o','r','l','d', '!'};
 ```
 
-Note that when working with chars that each element of the array has to be inside single quotes. A more concise way to acheive exactly the same thing is by enclosing your message in double quotes like so:
+Note that when working with chars that each element of the array has to be inside single quotes. A more concise way to acheive exactly the same thing is by enclosing the entire string in double quotes like so:
 
 ```
   char str2[20] = "Hello World!";
@@ -45,8 +45,7 @@ To find the length of a string simply use `strlen()` function. This function onl
 
 ### Joining Strings
 
-In many areas, particularly when working with databases, you frequently have to put two (or more) strings of text together. This joining operation is known as **concatenation**. 
-`strcat()`
+In many areas, particularly when working with databases, you frequently have to put two (or more) strings of text together. This joining operation is known as **concatenation**. You can concatenate two strings by using the `strcat()` function. Write a program that 
 
 ### Comparing Strings
 

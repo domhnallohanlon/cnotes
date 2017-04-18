@@ -36,16 +36,16 @@ To overwrite an existing string use the `strcpy()` function. This function takes
 What do you expect the output of the following gist will be?
 
 <code data-gist-id="a11b3d388b4e5d3f8fe7"></code>
-<a href="https://gist.github.com/domhnallohanlon/a11b3d388b4e5d3f8fe7/download" class="text-success pull-right">Download Code</a><br>
+<a href="https://gist.github.com/domhnallohanlon/a11b3d388b4e5d3f8fe7/download" class="btn btn-primary pull-right">Download Code</a><br>
 
 
 ### Measuring Strings
 
-To find the length of a string simply use `strlen()` function. This function only accepts one argument, the string you want to measure the length of, and it returns an integer value with the length of the string.
+To find the length of a string simply use `strlen()` function. This function only accepts one argument, the string you want to measure the length of, and it returns an integer value with the length of the string. Write a program that asks the user for two strings and then tells them which string is longer.
 
 ### Joining Strings
 
-In many areas, particularly when working with databases, you frequently have to put two (or more) strings of text together. This joining operation is known as **concatenation**. You can concatenate two strings by using the `strcat()` function. Write a program that 
+In many areas, particularly when working with databases, you frequently have to put two (or more) strings of text together. This joining operation is known as **concatenation**. You can concatenate two strings by using the `strcat()` function. Write a program that ask the user for their first name and their second name and concatenates these two strings, with a space in between, into a third string called full name.
 
 ### Comparing Strings
 

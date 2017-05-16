@@ -40,12 +40,85 @@ Create functions to calculate the area of a square, circle, cube and sphere.
 
 ### Square
 
+see the first example for squaring number.
+
 ### Circle
 
-\newpage
-### Cube
+``` C
 
-### Sphere
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define PI 3.141593
+
+float circle();
+
+float result;
+
+int main() {
+    
+    circle();
+    printf("The area is %.2f units squared.\n\n", result);
+}
+
+float circle(){
+    float rad;
+    printf("What is the radius of the circle?\n");
+    scanf("%f", &rad);
+    result = PI*rad*rad;
+    return result;
+}
+
+```
+
+\newpage
+### Cube & Sphere
+
+``` C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define PI 3.141593
+
+float circle();
+float cube();
+float sphere();
+
+float result;
+
+int main() {
+    
+    cube();
+    printf("The area is %.2f units squared.\n\n", result);
+    
+    sphere();
+    printf("The area is %.2f units squared.\n\n", result);
+}
+
+
+
+float cube(){
+    float side;
+    printf("Enter the side length: \n");
+    scanf("%f", &side);
+    result = 6 * side * side;
+    return result;
+}
+
+
+float sphere(){
+    float rad;
+    printf("What is the radius of the circle?\n");
+    scanf("%f", &rad);
+    result = 4*PI*rad*rad*rad;
+    result = result/3;
+    return result;
+}
+
+```
 
 
 \newpage

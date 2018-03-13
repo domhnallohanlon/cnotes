@@ -300,10 +300,15 @@ In your logic tests you can test if more than one condition is met using a logic
 Here's some pseudo-code to illustrate:
 
 ```
-  //logic and example
-  if (test 1 && test 2){
+  //logic AND example
+  if (test1 && test2){
     code if both are true;
-}
+  }
+
+  //logic OR example
+  if (test1 || test2){
+    code if 1 or 2 is true;
+  }
 ```
 
 Logic and is denoted by `&&` which is <kbd>Shift</kbd> + <kbd>7</kbd> on a UK keyboard. Logic or is denoted by `||` which is <kbd>Shift</kbd> + <kbd>&bsol;</kbd> on a standard keyboard.

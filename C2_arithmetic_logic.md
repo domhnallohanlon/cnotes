@@ -321,6 +321,19 @@ Try these two challenges to test your knowledge of what we covered in this chapt
 
 Write an application that asks for an integer input (between 0 and 100) and converts it the corresponding Leaving Cert grade. 
 
+
+| Marks | Grade | Points|
+|-------|-------|-------|
+|90-100%|  H1   |   100 |
+|80-89% |  H2   |    88 |
+|70-79% |  H3   |    77 |
+|60-69% |  H4   |    66 |
+|50-59% |  H5   |    56 |
+|40-49% |  H6   |    46 |
+|30-39% |  H7   |    37 |
+|0-29%  |  H8   |     0 |
+
+
 ### Fizz Buzz
 
 _need to introduce for loops first_

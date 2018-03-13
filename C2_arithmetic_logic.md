@@ -205,7 +205,7 @@ Try the following out:
 
 int input;
 
-  printf("What is the meaning of life, the universe and everything? \n")?
+  printf("What is the meaning of life, the universe and everything? \n");
   scanf("%d", &input);
 
   if (input == 42){

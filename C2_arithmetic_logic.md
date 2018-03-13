@@ -60,6 +60,11 @@ Also known as binary operators, these mathematical operators require two operand
 | division       |   \    |
 | modulo         |   %    |
 | equivalence    |   ==   |
+| less than      |   <    |
+| less than or = |   <=   |
+| greater than   |   >    |
+| greater or =   |   >=   |
+
 
 
 ## A Simple Incrementer
